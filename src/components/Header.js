@@ -1,13 +1,25 @@
 import React from 'react'
-
+import styled from 'styled-components'
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 function Header(){
 
 
     return (
-        <div>
+        //replace div with container
+        //two sections: search and username
+        <Container>
+            <Main>
+                <AccessTimeIcon/>
+                <HelpOutlineIcon/>
+                
+            </Main>
+            {/* <UserConatiner>
+
+            </UserConatiner> */}
             inside Header component
-        </div>
+        </Container>
 
     )
 
@@ -15,3 +27,12 @@ function Header(){
 }
 
 export default Header
+
+const Container = styled.div`
+
+`
+
+const Main = styled.div`
+
+
+`
